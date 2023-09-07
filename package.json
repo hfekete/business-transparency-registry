@@ -1,10 +1,12 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "cypress:open": "cypress open",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,8 +18,10 @@
     "@nuxtjs/i18n": "8.0.0-rc.4",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@pinia/nuxt": "^0.4.11",
+    "cypress": "^13.1.0",
     "eslint": "^8.48.0",
     "nuxt": "^3.7.0",
-    "vitest": "^0.34.3"
+    "nuxt-vitest": "^0.10.4",
+    "vitest": "^0.33.0"
   }
 }
