@@ -9,15 +9,18 @@ export default defineNuxtConfig({
     '@nuxtjs/stylelint-module',
     '@nuxtjs/i18n',
     '@pinia/nuxt',
-    'nuxt-vitest',
+    'nuxt-vitest'
   ],
   eslint: {
     /* module options */
+    lintOnStart: false,
+    include: ['/**/*.{js,jsx,ts,tsx,vue}']
   },
   stylelint: {
     /* module options */
+    lintOnStart: false
   },
   pinia: {
     /* pinia module options */
-  },
+  }
 })
