@@ -2,15 +2,21 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@8.6.12",
+  "description": "Beneficial Ownership Registry UI - Main repo",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "cypress:open": "cypress open",
     "generate": "nuxt generate",
-    "lint": "eslint .",
+    "lint": "eslint --cache .",
+    "lint:fix": "nr lint --fix",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -27,5 +33,13 @@
     "nuxt-vitest": "^0.10.4",
     "typescript": "^5.2.2",
     "vitest": "^0.33.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
   }
 }
