@@ -6,8 +6,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
     '@nuxtjs/i18n',
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-vitest'
   ],
