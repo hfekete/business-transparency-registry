@@ -1,7 +1,8 @@
 <template>
   <tr class="m-15">
     <td class="px-6 py-3 align-top font-bold uppercase">
-      <UIcon name="i-mdi-user" /> {{ individual.fullName }}
+      <UIcon name="i-mdi-user" />
+      {{ individual.fullName }}
     </td>
     <td class="px-6 py-3 align-top">{{ individual.address }}</td>
     <td class="px-6 py-3 align-top min-w-[120px]">
@@ -11,10 +12,16 @@
       <span>Tax Resident</span>
     </td>
     <td class="px-6 py-3 align-top"> {{ individual.significanceDates[0] }} to
-      {{ !!individual.significanceDates ? individual.significanceDates[0] : 'Current' }}
+      {{ !!individual.significanceDates?.[1] ? individual.significanceDates[1] : 'Current' }}
     </td>
     <td class="px-6 py-3 align-top"> {{ individual.controlsText }}</td>
-    <td class="px-6 py-3 align-top">todo: edit/change</td>
+    <td class="px-6 py-3 align-top">
+      <ULink>
+          <span class="text-blue-700">
+            <UIcon name="i-mdi-edit" />Change
+          </span>
+      </ULink>
+    </td>
   </tr>
 </template>
 

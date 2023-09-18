@@ -16,7 +16,7 @@ export const useIndividualPerson = defineStore('individualPerson', () => {
       uuid: '068f2803-436f-4b29-bc43-ce3f23c78e6c'
     },
     {
-      address: '231-5600 Andres Rd Richmond BC V7E 6N1 Canada',
+      address: '1231-5600 Andres Rd Richmond BC V7E 6N1 Canada',
       controlsText: 'Registered owner of 25% or more of the shares. Direct control of the right to elect, appoint or remove a majority directors.',
       details: {
         dateOfBirth: '1980-02-16',
@@ -27,7 +27,7 @@ export const useIndividualPerson = defineStore('individualPerson', () => {
       uuid: '57f4f5fb-db3e-4cd0-887e-d20bfd1da91c'
     },
     {
-      address: '231-5600 Andres Rd Richmond BC V7E 6N1 Canada',
+      address: '7231-5600 Andres Rd Richmond BC V7E 6N1 Canada',
       controlsText: 'Registered owner of 25% or more of the shares.',
       details: {
         dateOfBirth: '1980-02-16',
