@@ -10,8 +10,6 @@
 
     </div>
     <NUIndividualPersonSummaryTable :individuals="individuals" />
-    <br>
-    <IndividualPersonSummaryTable :individual-persons="individuals" />
   </div>
 </template>
 
