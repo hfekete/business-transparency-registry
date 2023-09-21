@@ -8,7 +8,6 @@ describe('Tests for app.vue', async () => {
     // test context options
   })
 
-
   test('header and footer initialized', () => {
     const wrapper = mount(LandingPage)
     expect(wrapper.find('#bcros-main-header')).toBeTruthy()

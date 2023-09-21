@@ -7,7 +7,6 @@
       <div class="p-5 flex-none w-4/5">
         <AddIndividualPerson />
       </div>
-
     </div>
     <NUIndividualPersonSummaryTable :individuals="individuals" />
   </div>

@@ -6,6 +6,5 @@ describe('pages -> Add individual', () => {
     cy.get('#bcros-main-footer')
 
     cy.contains('Add transparency register information manually')
-
   })
 })
